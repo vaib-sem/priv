@@ -11,14 +11,14 @@ class ArucoDetector(Node):
         super().__init__('aruco_detector')
         self.subscription = self.create_subscription(
             Image,
-            '/camera/image_raw',  # Change this to your camera topic
+            '/images_l16', 
             self.image_callback,
             10)
         self.publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.bridge = CvBridge()
         self.aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_6X6_250)
         self.aruco_params = cv2.aruco.DetectorParameters_create()
-        self.target_distance = 0.5  # Distance at which the robot stops
+        self.target_distance = 0.5  
 
     def image_callback(self, msg):
         cv_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')

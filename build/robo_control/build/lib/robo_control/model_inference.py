@@ -1,3 +1,8 @@
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+from std_msgs.msg import String
 import cv2
 import json
 import requests
@@ -11,31 +16,43 @@ CLIENT = InferenceHTTPClient(
     api_key="alK8EEqJGxv5cm4KiuF0"
 )
 
-# Function to infer on an image and get detection results
-def infer_on_frame(frame):
-    # Save the frame to a temporary file
-    temp_filename = "temp_frame.jpg"
-    cv2.imwrite(temp_filename, frame)
-    
-    # Infer on the saved image
-    result = CLIENT.infer(temp_filename, model_id="summer_project_morphobot/1")
-    
-    # Process the result
-    return result
+class ModelInference(Node):
+    def __init__(self):
+        super().__init__('model_inference')
+        self.publisher_ = self.create_publisher(String, '/detection_results', 10)
+        self.camera_subscription = self.create_subscription(
+            Image,
+            '/images_l16',
+            self.image_callback,
+            10)
+        self.bridge = CvBridge()
 
-# Open a connection to the webcam
-cap = cv2.VideoCapture(0)
+    def infer_on_frame(self, frame):
+        # Save the frame to a temporary file
+        temp_filename = "temp_frame.jpg"
+        cv2.imwrite(temp_filename, frame)
+        
+        # Infer on the saved image
+        result = CLIENT.infer(temp_filename, model_id="summer_project_morphobot/1")
+        
+        # Process the result
+        return result
 
-while True:
-    # Capture frame-by-frame
-    ret, frame = cap.read()
-    
-    # Perform inference on the current frame
-    if ret:
-        result = infer_on_frame(frame)
+    def image_callback(self, msg):
+        frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        
+        # Perform inference on the current frame
+        result = self.infer_on_frame(frame)
         detections = result.get("predictions", [])
-
-        # Draw bounding boxes on the frame
+        
+        detection_str = json.dumps(detections)
+        
+        # Publish detection results
+        detection_msg = String()
+        detection_msg.data = detection_str
+        self.publisher_.publish(detection_msg)
+        
+        # Display the resulting frame
         for detection in detections:
             x, y, w, h = detection["x"], detection["y"], detection["width"], detection["height"]
             class_name = detection["class"]
@@ -52,14 +69,15 @@ while True:
             label = f"{class_name}: {confidence:.2f}"
             cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
-        # Display the resulting frame
         cv2.imshow('Live Feed', frame)
+        cv2.waitKey(1)
 
-    # Break the loop on 'q' key press
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+def main(args=None):
+    rclpy.init(args=args)
+    model_inference = ModelInference()
+    rclpy.spin(model_inference)
+    model_inference.destroy_node()
+    rclpy.shutdown()
 
-# When everything is done, release the capture and close windows
-cap.release()
-cv2.destroyAllWindows()
-
+if __name__ == '__main__':
+    main()

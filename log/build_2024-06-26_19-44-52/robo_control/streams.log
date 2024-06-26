@@ -1,0 +1,44 @@
+[0.485s] Invoking command in '/home/rishith/MRT/Morphobot/rover/src/robo_control': PYTHONPATH=/home/rishith/MRT/Morphobot/rover/build/robo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/rishith/MRT/Morphobot/rover/build/robo_control/build install --record /home/rishith/MRT/Morphobot/rover/build/robo_control/install.log --single-version-externally-managed install_data
+[0.619s] running egg_info
+[0.619s] creating ../../build/robo_control/robo_control.egg-info
+[0.619s] writing ../../build/robo_control/robo_control.egg-info/PKG-INFO
+[0.619s] writing dependency_links to ../../build/robo_control/robo_control.egg-info/dependency_links.txt
+[0.620s] writing entry points to ../../build/robo_control/robo_control.egg-info/entry_points.txt
+[0.620s] writing requirements to ../../build/robo_control/robo_control.egg-info/requires.txt
+[0.620s] writing top-level names to ../../build/robo_control/robo_control.egg-info/top_level.txt
+[0.620s] writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.621s] reading manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.621s] writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.621s] running build
+[0.621s] running build_py
+[0.622s] creating /home/rishith/MRT/Morphobot/rover/build/robo_control/build
+[0.622s] creating /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib
+[0.622s] creating /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control
+[0.622s] copying robo_control/aruco_detector.py -> /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control
+[0.622s] copying robo_control/model_inference.py -> /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control
+[0.622s] copying robo_control/__init__.py -> /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control
+[0.622s] copying robo_control/controller.py -> /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control
+[0.622s] running install
+[0.622s] running install_lib
+[0.622s] creating /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.623s] copying /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control/aruco_detector.py -> /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.623s] copying /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control/model_inference.py -> /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.623s] copying /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control/__init__.py -> /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.623s] copying /home/rishith/MRT/Morphobot/rover/build/robo_control/build/lib/robo_control/controller.py -> /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.623s] byte-compiling /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control/aruco_detector.py to aruco_detector.cpython-310.pyc
+[0.623s] byte-compiling /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control/model_inference.py to model_inference.cpython-310.pyc
+[0.624s] byte-compiling /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control/__init__.py to __init__.cpython-310.pyc
+[0.624s] byte-compiling /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control/controller.py to controller.cpython-310.pyc
+[0.625s] running install_data
+[0.625s] creating /home/rishith/MRT/Morphobot/rover/install/robo_control/share/ament_index
+[0.625s] creating /home/rishith/MRT/Morphobot/rover/install/robo_control/share/ament_index/resource_index
+[0.625s] creating /home/rishith/MRT/Morphobot/rover/install/robo_control/share/ament_index/resource_index/packages
+[0.625s] copying resource/robo_control -> /home/rishith/MRT/Morphobot/rover/install/robo_control/share/ament_index/resource_index/packages
+[0.625s] copying package.xml -> /home/rishith/MRT/Morphobot/rover/install/robo_control/share/robo_control
+[0.625s] running install_egg_info
+[0.626s] Copying ../../build/robo_control/robo_control.egg-info to /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info
+[0.627s] running install_scripts
+[0.641s] Installing aruco_detector script to /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/robo_control
+[0.641s] Installing controller script to /home/rishith/MRT/Morphobot/rover/install/robo_control/lib/robo_control
+[0.641s] writing list of installed files to '/home/rishith/MRT/Morphobot/rover/build/robo_control/install.log'
+[0.658s] Invoked command in '/home/rishith/MRT/Morphobot/rover/src/robo_control' returned '0': PYTHONPATH=/home/rishith/MRT/Morphobot/rover/build/robo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishith/MRT/Morphobot/rover/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/rishith/MRT/Morphobot/rover/build/robo_control/build install --record /home/rishith/MRT/Morphobot/rover/build/robo_control/install.log --single-version-externally-managed install_data

@@ -1,0 +1,31 @@
+[0.711s] Invoking command in '/home/rishith/MRT/Summer_project(Morphobot)/priv-main/src/robo_control': PYTHONPATH=/home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build install --record /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/install.log --single-version-externally-managed install_data
+[0.956s] running egg_info
+[0.956s] writing ../../build/robo_control/robo_control.egg-info/PKG-INFO
+[0.957s] writing dependency_links to ../../build/robo_control/robo_control.egg-info/dependency_links.txt
+[0.957s] writing entry points to ../../build/robo_control/robo_control.egg-info/entry_points.txt
+[0.957s] writing requirements to ../../build/robo_control/robo_control.egg-info/requires.txt
+[0.957s] writing top-level names to ../../build/robo_control/robo_control.egg-info/top_level.txt
+[0.958s] reading manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.959s] writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.959s] running build
+[0.959s] running build_py
+[0.959s] copying robo_control/aruco_detector.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control
+[0.959s] copying robo_control/model_inference.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control
+[0.960s] copying robo_control/controller.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control
+[0.960s] running install
+[0.960s] running install_lib
+[0.960s] copying /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control/aruco_detector.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.960s] copying /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control/model_inference.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.960s] copying /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build/lib/robo_control/controller.py -> /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.961s] byte-compiling /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control/aruco_detector.py to aruco_detector.cpython-310.pyc
+[0.962s] byte-compiling /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control/model_inference.py to model_inference.cpython-310.pyc
+[0.962s] byte-compiling /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control/controller.py to controller.cpython-310.pyc
+[0.963s] running install_data
+[0.963s] running install_egg_info
+[0.966s] removing '/home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info' (and everything under it)
+[0.966s] Copying ../../build/robo_control/robo_control.egg-info to /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info
+[0.967s] running install_scripts
+[0.982s] Installing aruco_detector script to /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/robo_control
+[0.982s] Installing controller script to /home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/robo_control
+[0.982s] writing list of installed files to '/home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/install.log'
+[1.003s] Invoked command in '/home/rishith/MRT/Summer_project(Morphobot)/priv-main/src/robo_control' returned '0': PYTHONPATH=/home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rishith/MRT/Summer_project(Morphobot)/priv-main/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/build install --record /home/rishith/MRT/Summer_project(Morphobot)/priv-main/build/robo_control/install.log --single-version-externally-managed install_data

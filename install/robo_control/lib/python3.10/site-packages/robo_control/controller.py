@@ -2,8 +2,10 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import LaserScan, Image
 from geometry_msgs.msg import Twist
+from std_msgs.msg import String
 from cv_bridge import CvBridge
 import cv2
+import json
 import numpy as np
 
 class RobotController(Node):
@@ -20,9 +22,15 @@ class RobotController(Node):
             '/images_l16',
             self.camera_callback,
             10)
+        self.detection_subscription = self.create_subscription(
+            String,
+            '/detection_results',
+            self.detection_callback,
+            10)
         self.bridge = CvBridge()
         self.lidar_data = []
         self.camera_data = None
+        self.detections = []
 
     def lidar_callback(self, msg):
         self.lidar_data = msg.ranges
@@ -30,6 +38,10 @@ class RobotController(Node):
 
     def camera_callback(self, msg):
         self.camera_data = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        self.avoid_obstacles()
+
+    def detection_callback(self, msg):
+        self.detections = json.loads(msg.data)
         self.avoid_obstacles()
 
     def avoid_obstacles(self):
