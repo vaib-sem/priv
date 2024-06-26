@@ -21,8 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
              'controller = robo_control.controller:main',
-              'aruco_detector = aruco_navigation.aruco_detector:main',
-              
+              'aruco_detector = robo_control.aruco_detector:main',
+              'model_inference = robo_control.model_inference:main'
         ],
     },
 )
