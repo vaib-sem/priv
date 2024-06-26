@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000190] (robo_control) JobQueued: {'identifier': 'robo_control', 'dependencies': OrderedDict()}
+[0.000246] (robo_control) JobStarted: {'identifier': 'robo_control'}
+[0.089701] (-) TimerEvent: {}
+[0.190080] (-) TimerEvent: {}
+[0.295683] (-) TimerEvent: {}
+[0.396187] (-) TimerEvent: {}
+[0.496599] (-) TimerEvent: {}
+[0.597217] (-) TimerEvent: {}
+[0.705377] (-) TimerEvent: {}
+[0.806331] (-) TimerEvent: {}
+[0.906860] (-) TimerEvent: {}
+[1.007452] (-) TimerEvent: {}
+[1.108051] (-) TimerEvent: {}
+[1.208931] (-) TimerEvent: {}
+[1.298790] (robo_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robo_control', 'build', '--build-base', '/home/mac_vaibubuntu/project_ws/build/robo_control/build', 'install', '--record', '/home/mac_vaibubuntu/project_ws/build/robo_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mac_vaibubuntu/project_ws/src/robo_control', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mac_vaibubuntu', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/mac_vaibubuntu', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.89.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1693', 'SYSTEMD_EXEC_PID': '1806', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2270', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/mac_vaibubuntu/iroc_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'mac_vaibubuntu', 'JOURNAL_STREAM': '8:25495', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mac_vaibubuntu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu12:@/tmp/.ICE-unix/1777,unix/ubuntu12:/tmp/.ICE-unix/1777', 'INVOCATION_ID': '813c55baabb54e46899809ac7f49d470', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Z6RUO2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f59a3c3251.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mac_vaibubuntu/iroc_ws/install/my_bot:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mac_vaibubuntu/project_ws/build/robo_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mac_vaibubuntu/project_ws/build/robo_control/prefix_override:/home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mac_vaibubuntu/iroc_ws/install/my_bot'}, 'shell': False}
+[1.309034] (-) TimerEvent: {}
+[1.409396] (-) TimerEvent: {}
+[1.509762] (-) TimerEvent: {}
+[1.610097] (-) TimerEvent: {}
+[1.666859] (robo_control) StdoutLine: {'line': b'running egg_info\n'}
+[1.668697] (robo_control) StdoutLine: {'line': b'writing ../../build/robo_control/robo_control.egg-info/PKG-INFO\n'}
+[1.669471] (robo_control) StdoutLine: {'line': b'writing dependency_links to ../../build/robo_control/robo_control.egg-info/dependency_links.txt\n'}
+[1.670168] (robo_control) StdoutLine: {'line': b'writing entry points to ../../build/robo_control/robo_control.egg-info/entry_points.txt\n'}
+[1.670845] (robo_control) StdoutLine: {'line': b'writing requirements to ../../build/robo_control/robo_control.egg-info/requires.txt\n'}
+[1.670945] (robo_control) StdoutLine: {'line': b'writing top-level names to ../../build/robo_control/robo_control.egg-info/top_level.txt\n'}
+[1.673343] (robo_control) StdoutLine: {'line': b"reading manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'\n"}
+[1.676173] (robo_control) StdoutLine: {'line': b"writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'\n"}
+[1.676951] (robo_control) StdoutLine: {'line': b'running build\n'}
+[1.677076] (robo_control) StdoutLine: {'line': b'running build_py\n'}
+[1.678366] (robo_control) StdoutLine: {'line': b'copying robo_control/controller.py -> /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib/robo_control\n'}
+[1.678499] (robo_control) StdoutLine: {'line': b'running install\n'}
+[1.679061] (robo_control) StdoutLine: {'line': b'running install_lib\n'}
+[1.681197] (robo_control) StdoutLine: {'line': b'copying /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib/robo_control/controller.py -> /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control\n'}
+[1.681765] (robo_control) StdoutLine: {'line': b'byte-compiling /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control/controller.py to controller.cpython-310.pyc\n'}
+[1.683012] (robo_control) StdoutLine: {'line': b'running install_data\n'}
+[1.684256] (robo_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.686642] (robo_control) StdoutLine: {'line': b"removing '/home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.686912] (robo_control) StdoutLine: {'line': b'Copying ../../build/robo_control/robo_control.egg-info to /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info\n'}
+[1.687634] (robo_control) StdoutLine: {'line': b'running install_scripts\n'}
+[1.710225] (-) TimerEvent: {}
+[1.715262] (robo_control) StdoutLine: {'line': b'Installing aruco_detector script to /home/mac_vaibubuntu/project_ws/install/robo_control/lib/robo_control\n'}
+[1.716678] (robo_control) StdoutLine: {'line': b'Installing controller script to /home/mac_vaibubuntu/project_ws/install/robo_control/lib/robo_control\n'}
+[1.718273] (robo_control) StdoutLine: {'line': b"writing list of installed files to '/home/mac_vaibubuntu/project_ws/build/robo_control/install.log'\n"}
+[1.772532] (robo_control) CommandEnded: {'returncode': 0}
+[1.784795] (robo_control) JobEnded: {'identifier': 'robo_control', 'rc': 0}
+[1.786610] (-) EventReactorShutdown: {}

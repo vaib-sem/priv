@@ -1,0 +1,33 @@
+[0.706s] Invoking command in '/home/mac_vaibubuntu/project_ws/src/robo_control': PYTHONPATH=/home/mac_vaibubuntu/project_ws/build/robo_control/prefix_override:/home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/mac_vaibubuntu/project_ws/build/robo_control/build install --record /home/mac_vaibubuntu/project_ws/build/robo_control/install.log --single-version-externally-managed install_data
+[0.900s] running egg_info
+[0.900s] creating ../../build/robo_control/robo_control.egg-info
+[0.900s] writing ../../build/robo_control/robo_control.egg-info/PKG-INFO
+[0.901s] writing dependency_links to ../../build/robo_control/robo_control.egg-info/dependency_links.txt
+[0.901s] writing entry points to ../../build/robo_control/robo_control.egg-info/entry_points.txt
+[0.901s] writing requirements to ../../build/robo_control/robo_control.egg-info/requires.txt
+[0.901s] writing top-level names to ../../build/robo_control/robo_control.egg-info/top_level.txt
+[0.901s] writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.902s] reading manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.903s] writing manifest file '../../build/robo_control/robo_control.egg-info/SOURCES.txt'
+[0.903s] running build
+[0.903s] running build_py
+[0.904s] creating /home/mac_vaibubuntu/project_ws/build/robo_control/build
+[0.904s] creating /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib
+[0.904s] creating /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib/robo_control
+[0.904s] copying robo_control/__init__.py -> /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib/robo_control
+[0.904s] running install
+[0.904s] running install_lib
+[0.904s] creating /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.904s] copying /home/mac_vaibubuntu/project_ws/build/robo_control/build/lib/robo_control/__init__.py -> /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control
+[0.905s] byte-compiling /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control/__init__.py to __init__.cpython-310.pyc
+[0.905s] running install_data
+[0.905s] creating /home/mac_vaibubuntu/project_ws/install/robo_control/share/ament_index
+[0.905s] creating /home/mac_vaibubuntu/project_ws/install/robo_control/share/ament_index/resource_index
+[0.905s] creating /home/mac_vaibubuntu/project_ws/install/robo_control/share/ament_index/resource_index/packages
+[0.905s] copying resource/robo_control -> /home/mac_vaibubuntu/project_ws/install/robo_control/share/ament_index/resource_index/packages
+[0.905s] copying package.xml -> /home/mac_vaibubuntu/project_ws/install/robo_control/share/robo_control
+[0.905s] running install_egg_info
+[0.907s] Copying ../../build/robo_control/robo_control.egg-info to /home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages/robo_control-0.0.0-py3.10.egg-info
+[0.908s] running install_scripts
+[0.924s] writing list of installed files to '/home/mac_vaibubuntu/project_ws/build/robo_control/install.log'
+[0.943s] Invoked command in '/home/mac_vaibubuntu/project_ws/src/robo_control' returned '0': PYTHONPATH=/home/mac_vaibubuntu/project_ws/build/robo_control/prefix_override:/home/mac_vaibubuntu/project_ws/install/robo_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robo_control build --build-base /home/mac_vaibubuntu/project_ws/build/robo_control/build install --record /home/mac_vaibubuntu/project_ws/build/robo_control/install.log --single-version-externally-managed install_data

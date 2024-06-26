@@ -1,0 +1,4 @@
+[console_scripts]
+aruco_detector = aruco_navigation.aruco_detector:main
+controller = robo_control.controller:main
+
